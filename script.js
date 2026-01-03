@@ -11,3 +11,15 @@ console.log("elements cached");
 //create message element 
 const message = document.createElement("p")
 jokeBuilder.appendChild(message);
+
+
+//creating a message box under the input form so I can show errors.
+jokeSetUp.addEventListener("blur", () => {
+  if (jokeSetUp.value.trim().length < 4) {
+    message.textContent = "Joke setup must be at least 4 characters.";
+    message.style.color = "red";
+  } else {
+    message.textContent = "";
+  }
+});
+
