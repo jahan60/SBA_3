@@ -78,4 +78,38 @@ const punchValue = punchLine.value.trim();
 
   fragment.appendChild(jokeDiv);
   jokesContainer.appendChild(fragment);
+
+  //make the buttion show or hide the punchline when clicked 
+
+
+  toggleBtn.addEventListener("click", () => {
+    console.log("punchline toggle clicked");
+
+    const punchlineElement = toggleBtn.nextElementSibling;
+
+    if (punchlineElement.style.display === "none") {
+      punchlineElement.style.display = "block";
+      toggleBtn.textContent = "Hide Punchline";
+      toggleBtn.ariaExpanded = "true";
+    } else {
+      punchlineElement.style.display = "none";
+      toggleBtn.textContent = "Show Punchline";
+    toggleBtn.ariaExpanded = "true";
+
+    }
+  });
+
+// delete joke event
+deleteBtn.addEventListener("click", () => {
+    console.log("delete button clicked");
+    jokeDiv.remove();
+  });
+
+  const allJokes = document.querySelectorAll(".joke_box");
+
+for (let i = 0; i < allJokes.length; i++) {
+  allJokes[i].dataset.jokeNumber = i + 1;   
+    console.log("joke indexed:", i + 1);
+}
+
 });
