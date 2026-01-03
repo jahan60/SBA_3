@@ -111,5 +111,17 @@ for (let i = 0; i < allJokes.length; i++) {
   allJokes[i].dataset.jokeNumber = i + 1;   
     console.log("joke indexed:", i + 1);
 }
+//back to top buttion 
+backToTopBtn.addEventListener("click", () => {
+  console.log("back to top button clicked");
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+  });
+  //BOM property 
+  console.log(window.innerWidth);
+
 
 });
