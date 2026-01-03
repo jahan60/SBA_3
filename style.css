@@ -1,56 +1,92 @@
-body{
-    background-color: #fce4ec;
-    font-family: 'Times New Roman', Times, serif;
-    color: #8c1424e0;
-    margin: 20px;
+
+body {
+  background-color: #fce4ec;
+  font-family: "Times New Roman", Times, serif;
+  color: #8c1424e0;
+  margin: 20px;
 }
 
-h1{
-    color: #6a1b9a;
-    text-align: center;
+h1 {
+  color: #6a1b9a;
+  text-align: center;
 }
 
-input, button{
-    background-color: #691b9a1a;
-    border: 2px solid #ce93d8;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 5px;
-    font-size:14px;
+.hero_layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
 
+#hero_image {
+  max-width: 450px;   
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+
+#joke_builder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;   
+  width: 100%;
+}
+
+#joke_builder input {
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: #691b9a1a;
+  border: 2px solid #ce93d8;
+}
+
+
+#joke_builder button {
+  padding: 8px 12px;       
+  font-size: 14px;         
+  border-radius: 6px;      
+  background-color: #691b9a1a;
+  border: 2px solid #ce93d8;
+  align-self: flex-start;  
+  width: auto;            
 }
 
 button:hover {
-    background-color: aliceblue;
-    cursor: pointer;
+  background-color: aliceblue;
+  cursor: pointer;
 }
 
-.joke_box{
-    background-color: #fff0f5;
-    border: 1px solid #e1bee7;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 8px;
-        
-
+.joke_box {
+  background-color: #fff0f5;
+  border: 1px solid #e1bee7;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
 }
 
-.joke_setup{
-    font-weight: bold;
-    color: #880e4f;
-
+.joke_box p:first-child {
+  font-weight: bold;
+  color: #880e4f;
 }
 
-.joke_punchline{
-
-    margin-top: 10px;
-    color: #880e4f;
-    font-size: 14px;
-}
-a {
-    color:#ce93d8
+.joke_box p:nth-child(3) {
+  margin-top: 10px;
+  color: #880e4f;
+  font-size: 14px;
 }
 
-a:hover{
-    text-decoration: underline;
+#back_to_top {
+  display: block;
+  margin: 40px auto;
+  padding: 10px 20px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

@@ -3,27 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fun Page</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
   </head>
+
   <body>
     <h1>Fun Page</h1>
-    <form id="joke_builder">
-      <input type="text" id="joke_setup" placeholder="Craft a Joke" required />
-      <input type="text" , id="punchline" , placeholder="Punchline" />
-      <button type="submit">Add Joke</button>
-    </form>
 
-    <div class="joke_box">
-      <p class="joke_input">Why did the scarecrow win an award</p>
-      <button class="show_punchline_btn">Show Punchline</button>
+    <div class="hero_layout">
+      <img id="hero_image" src="joke_pic.jpg" alt="Funny hero image" />
 
-      <p class="joke_punchline" style="display: none">
-        Because he was outstanding in his field.
-      </p>
+      <form id="joke_builder">
+        <label for="joke_setup">Craft a Joke</label>
+        <input type="text" id="joke_setup" required />
+
+        <label for="punchline">Punchline</label>
+        <input type="text" id="punchline" />
+
+        <button type="submit">Add Joke</button>
+      </form>
     </div>
 
-    <button type="click">Back to Top</button>
+    
+    <div id="jokes_container"></div>
+
+    <button type="button" id="back_to_top">Back to Top</button>
   </body>
 </html>
