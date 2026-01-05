@@ -23,7 +23,11 @@ Project Overview: this project is a a simple joke builder web page includes Java
     -A delete button to remove the joke
 5. The punchline is hidden by default and toggled using a button.
 6. A “Back to Top” button scrolls the page smoothly to the top.
-7. Console logs are used during development to track execution and behavior.
+
+## Resources:
+1. https://www.pexels.com/
+2. https://developer.mozilla.org/en-US/
+
 
 
 
